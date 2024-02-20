@@ -21,4 +21,4 @@ def home(request):
     context = {
         'articles' : articles
     }
-    return render(request, 'news_api/home.html', context)
+    return render(request, 'home.html', context)
