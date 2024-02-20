@@ -1,5 +1,6 @@
 {% load static %}
 
+<!-- Navbar -->
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -17,6 +18,11 @@
                   Country
                 </a>
                 <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="{% url 'home' %}?country=in">India</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home' %}?country=ie">Ireland</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home' %}?country=de">Germany</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home' %}?country=us">United States</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home' %}?country=gb">United Kingdom</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -24,6 +30,12 @@
                   Categaries
                 </a>
                 <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="{% url 'home' %}?category=Sports">Sports</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home' %}?category=Business">Business</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home' %}?category=Entertainment">Entertainment</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home' %}?category=technology">Technology</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home' %}?category=health">Health</a></li>
+                  <li><a class="dropdown-item" href="{% url 'home' %}?category=Science">Science</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -37,3 +49,13 @@
         </div>
       </nav>
 </header>
+
+<!-- Header and Slogan -->
+<div class="container">
+  <div class="text-center my-5">
+      <h1 class="fw-bolder">HEADS & TAILS NEWS!</h1>
+      <p class="lead mb-0" id = "head-color">Unveiling Truths, Shaping Narratives</p>
+  </div>
+</div>
+<hr>
+<br/>
